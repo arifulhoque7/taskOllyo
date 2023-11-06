@@ -10,9 +10,6 @@ const Sortable = ({ data, index, uid, selectedfile, selectedFiles }) => {
     listeners,
     transform,
     transition,
-    isSorting,
-    isOver,
-    
   } = useSortable({ id: uid });
 
   const style = {

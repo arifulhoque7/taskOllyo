@@ -10,7 +10,7 @@ const Item = ({
   selectedfile,
   selectedFiles
 }) => {
-  const { img, id, isSelected } = data;
+  const { img, id } = data;
 
   return (
     <div
@@ -23,12 +23,12 @@ const Item = ({
       {...listeners}
     >
       <div
-        className={`flex items-center justify-center bg-white ${
+        className={`flex bg-white justify-center items-center ${
           isDragging ? "shadow-md" : ""
         } ${copyOpacity ? "opacity-50" : "opacity-100"}`}
       >
 
-        <div className="absolute top-0 left-0 w-full h-full duration-700 ease-in-out hover:bg-black/40">
+        <div className="top-0 left-0 w-full h-full duration-700 absolute ease-in-out hover:bg-black/40">
           <input
             type="checkbox"
             className={`${selectedFiles?.includes(id) ? '' : 'hidden'} w-5 h-5 m-2 sm:m-4 group-hover:block`}
