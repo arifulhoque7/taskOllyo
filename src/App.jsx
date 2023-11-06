@@ -78,8 +78,6 @@ export default function App() {
     }
   }
 
-  console.log('selectedFiles', selectedFiles);
-
   const uploadRef = useRef(null)
   
   const imgFilehandler = (e) => {

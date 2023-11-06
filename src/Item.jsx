@@ -1,4 +1,3 @@
-/* eslint-disable react/prop-types */
 const Item = ({
   copyOpacity,
   style,
@@ -28,12 +27,7 @@ const Item = ({
           isDragging ? "shadow-md" : ""
         } ${copyOpacity ? "opacity-50" : "opacity-100"}`}
       >
-        {/* When checked */}
-        {/* <div className="absolute top-0 left-0 w-full h-full bg-white/50">
-          <input type="checkbox" className="w-5 h-5 m-4" />
-        </div> */}
 
-        {/* when hover */}
         <div className="absolute top-0 left-0 w-full h-full duration-700 ease-in-out hover:bg-black/40">
           <input
             type="checkbox"
